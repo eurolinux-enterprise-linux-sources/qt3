@@ -2,7 +2,7 @@
 
 Summary: The shared library for the Qt 3 GUI toolkit
 Version: 3.3.8b
-Release: 29%{?dist}
+Release: 30%{?dist}
 Name: qt3
 Obsoletes: qt < 1:%{version}-%{release}
 Provides: qt = 1:%{version}-%{release}
@@ -602,6 +602,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Mon Jul 18 2011 Than Ngo <than@redhat.com> - 3.3.8b-30
+- Resolves: bz#651426, qt3 should prefer 64 bit arch in ppc64
+
 * Wed Jun 30 2010 Than Ngo <than@redhat.com> - 3.3.8b-29
 - Resolves: bz#605106, XML validity issue, fno-strict-aliasing
 
