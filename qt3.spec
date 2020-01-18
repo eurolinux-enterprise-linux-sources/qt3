@@ -3,7 +3,7 @@
 Name: qt3
 Summary: The shared library for the Qt 3 GUI toolkit
 Version: 3.3.8b
-Release: 48%{?dist}
+Release: 51%{?dist}
 License: QPL or GPLv2 or GPLv3
 Group: System Environment/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -620,6 +620,16 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.3.8b-51
+- Mass rebuild 2014-01-24
+
+* Wed Jan 15 2014 Honza Horak <hhorak@redhat.com> - 3.3.8b-50
+- Rebuild for mariadb-libs
+  Related: #1045013
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.3.8b-49
+- Mass rebuild 2013-12-27
+
 * Thu Apr 25 2013 Than Ngo <than@redhat.com> - 3.3.8b-48
 - build with -fno-strict-aliasing
 - drop deprecated Encoding
